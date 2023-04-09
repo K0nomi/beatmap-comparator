@@ -4,7 +4,7 @@ This tool compares two or more .osu beatmap files to find differences in the num
 
 ### Usage
 
-	python beatmap_parser.py [-h] [--files FILES [FILES ...]] [--directory DIRECTORY]
+	main.py [-h] [--files FILES [FILES ...]] [--directory DIRECTORY]
 
 The following command-line arguments are supported:
 
@@ -15,8 +15,8 @@ The following command-line arguments are supported:
 
 Compare all `.osu` files in the input directory:
 
-	python beatmap_parser.py
+	main.py
 
 Compare all `.osu` files in `C:\Users\Konomi\AppData\Local\osu!\Songs\example`:
 
-	python beatmap_parser.py -i "C:\Users\Konomi\AppData\Local\osu!\Songs\example"
+	main.py -i "C:\Users\Konomi\AppData\Local\osu!\Songs\example"
