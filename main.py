@@ -12,17 +12,12 @@ def parse(beatmap_dir):
     with open(beatmap_dir, "r", encoding="utf8") as f:
         in_hitobjects = False
         
-        # Loop through each line in the file
         for line in f:
-            
-            # Check if we are in the hit objects section of the file
+            # Check if in HitObjects section of file, if so then add a note to the timestamp
             if in_hitobjects:
-                
-                # Add note's start time to the objects dictionary
                 note_time = line.split(",")[2]
                 objects[note_time] = objects.get(note_time, 0) + 1
 
-            # Check if the current line marks the beginning of the hit objects section
             if '[HitObjects]' in line:
                 in_hitobjects = True
 
