@@ -4,7 +4,7 @@ This tool compares two or more .osu beatmap files to find differences in the num
 
 ### Usage
 
-	main.py [-h] [--files FILES [FILES ...]] [--directory DIRECTORY]
+	main.py [-h] [-i INPUT_DIRECTORY]
 
 The following command-line arguments are supported:
 
